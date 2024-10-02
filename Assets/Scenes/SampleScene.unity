@@ -704,6 +704,8 @@ MonoBehaviour:
   cellSize: 1
   cellPrefabs: {fileID: 3813814545307751421, guid: 8ce4e531de87ab44d92ed9691a025314,
     type: 3}
+  buildingPrefabs: {fileID: 815914053389079972, guid: 540cac1d88ce98f408dd8e6671ea1946,
+    type: 3}
   playerController: {fileID: 1803166772}
   grid: {fileID: 1585795380}
 --- !u!156049354 &1585795380
