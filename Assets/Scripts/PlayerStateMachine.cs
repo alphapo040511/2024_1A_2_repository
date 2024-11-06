@@ -38,6 +38,12 @@ public class PlayerStateMachine : MonoBehaviour
     //TransitionToState 새로운 상태로 전환하는 메서드
     public void TransitionToState(PlayerState newState)
     {
+        //현재 상태와 새로운 상태가 같은 타입일 경우 상태 전환을 하지 않게 한다.
+        if(currentState?.GetType() == newState.GetType())
+        {
+            return;
+        }
+
         currentState?.Exit();                   //현재 상태가 존재한다면 [?] if 문처럼 쓰임 (상태 종료)
 
         currentState = newState;                //새로운 상태로 전환
