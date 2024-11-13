@@ -29,7 +29,7 @@ public class PlayerAnimationManager : MonoBehaviour
             //현재 상태에 따라 해당하는 애니메이션 파라미터 설정
             switch(stateMachine.currentState)
             {
-                case IdelState:
+                case IdleState:
                     //Idel 상태는 모든 파라미터가 false인 상태
                     break;
                 case MovingState:

@@ -36,7 +36,7 @@ public abstract class PlayerState //모든 플레이어 상태의 기본이 되는 추상 클래스
             }
             else                                                                            //아무 키도 누르지 않았을 때
             {
-                stateMachine.TransitionToState(new IdelState(stateMachine));
+                stateMachine.TransitionToState(new IdleState(stateMachine));
             }
         }
         //공중에 있을 때의 상태 전환 로직
@@ -55,9 +55,9 @@ public abstract class PlayerState //모든 플레이어 상태의 기본이 되는 추상 클래스
 }
 
 //IdleState : 플레이어가 정지해 있는 상태
-public class IdelState : PlayerState
+public class IdleState : PlayerState
 {
-    public IdelState(PlayerStateMachine stateMachine) : base(stateMachine) { }
+    public IdleState(PlayerStateMachine stateMachine) : base(stateMachine) { }
 
     public override void Update()
     {

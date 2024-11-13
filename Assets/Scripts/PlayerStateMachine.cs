@@ -15,7 +15,7 @@ public class PlayerStateMachine : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        TransitionToState(new IdelState(this));                     //초기 상태를 IdleState로 설정
+        TransitionToState(new IdleState(this));                     //초기 상태를 IdleState로 설정
     }
 
     // Update is called once per frame
