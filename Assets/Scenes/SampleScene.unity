@@ -2475,6 +2475,7 @@ GameObject:
   - component: {fileID: 1803166778}
   - component: {fileID: 1803166779}
   - component: {fileID: 1803166780}
+  - component: {fileID: 1803166781}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -2706,6 +2707,25 @@ MonoBehaviour:
   lastPosition: {x: 0, y: 0, z: 0}
   moveThreshold: 0.1
   currentNearbyBuilding: {fileID: 0}
+--- !u!114 &1803166781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1803166769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27b955662fd5ac04f995b06b2ed9d5c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHunger: 100
+  currentHunger: 0
+  hungerDecreaseRate: 1
+  maxSuitDurability: 100
+  currentSuitDurability: 0
+  havestingDamage: 5
+  craftingDamage: 3
 --- !u!1001 &1831464332
 PrefabInstance:
   m_ObjectHideFlags: 0
